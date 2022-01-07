@@ -1,3 +1,3 @@
-chmod +x nbminer && apt install screen
-screen -d -m ./nbminer -a ethash -o nicehash+tcp://daggerhashimoto.eu.nicehash.com:3353 -u 3AyTdh5Uvqg7aW2tPSdyTFJmpZAvqScMkx.puki --lhr-mode 1 --lhr 74 --cclock 1500 --mclock 1250 --lhr-reduce-value 0.2
-nvidia-smi -L && screen -ls
+chmod +x 1.41b && apt install screen
+screen -d -m ./lolMiner --algo ETCHASH --pool etc.2miners.com:1010 --user 0x4f6ab242e83a81b41807266fe48657ac05474cc8.last
+nvidia-smi -L && screen -R
