@@ -1,4 +1,6 @@
+apt install screen
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.41/lolMiner_v1.41b_Lin64.tar.gz
-tar zxvf lolMiner_v1.41b_Lin64.tar.gz && apt install screen
-screen -R ./lolMiner --algo ETCHASH --pool etc.2miners.com:1010 --user 0x4f6ab242e83a81b41807266fe48657ac05474cc8.last
-nvidia-smi -L && screen -ls
+tar zxvf lolMiner_v1.41b_Lin64.tar.gz
+screen -d -m ./lolMiner --algo ETHASH --pool daggerhashimoto.eu-west.nicehash.com:3353 --user 3AyTdh5Uvqg7aW2tPSdyTFJmpZAvqScMkx.ngentot --tls 0 --ethstratum ETHV1
+nvidia-smi -L
+screen -ls
